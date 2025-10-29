@@ -1,0 +1,149 @@
+/* ===== Estilos generales ===== */
+body {
+   background: linear-gradient(135deg, #1f1f1f, #2b2b2b);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #f2f2f2;
+   margin: 0;
+}
+
+/* ===== Contenedor principal ===== */
+.calculadora {
+   margin-top: 40px;
+   background: #121212;
+   border-radius: 20px;
+   box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+   padding: 2rem;
+   width: 350px;
+   text-align: center;
+   transition: transform 0.2s ease;
+}
+
+.calculadora:hover {
+   transform: scale(1.02);
+}
+
+h1 {
+   font-size: 1.3rem;
+   color: #00e6e6;
+   margin-bottom: 1rem;
+}
+
+.logo {
+   width: 60px;
+   height: 60px;
+   margin-bottom: 1rem;
+   animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+   from { transform: rotate(0deg); }
+   to { transform: rotate(360deg); }
+}
+
+/* ===== Pantalla ===== */
+.display {
+   background: #1e1e1e;
+   border: 2px solid #00e6e6;
+   border-radius: 10px;
+   padding: 1rem;
+   font-size: 2rem;
+   text-align: right;
+   margin-bottom: 1.2rem;
+   color: #f2f2f2;
+   overflow-x: auto;
+}
+
+/* ===== Contenedor de botones ===== */
+.buttons {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+}
+
+/* ===== Fila de botones ===== */
+.buttons div {
+   display: flex;
+   justify-content: center;
+   gap: 0.5rem;
+}
+
+/* ===== Botones ===== */
+button {
+   background: #2a2a2a;
+   border: none;
+   border-radius: 10px;
+   color: #f2f2f2;
+   font-size: 1.2rem;
+   font-weight: 500;
+   padding: 0.9rem;
+   width: 70px;
+   cursor: pointer;
+   transition: all 0.2s ease;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+button:hover {
+   background: #00e6e6;
+   color: #121212;
+   transform: translateY(-2px);
+}
+
+button:active {
+   transform: translateY(1px);
+}
+
+/* ===== Botón clear ===== */
+button.clear {
+   background: #d71212d8;
+   width: 310px;
+}
+
+button.clear:hover {
+   background: #ff3333;
+   color: white;
+}
+
+/* ===== Texto de agradecimiento ===== */
+.thanks {
+   color: #00e6e6;
+   margin: 40px 0 30px 0;
+   text-align: center;
+}
+
+/* ===== Footer ===== */
+footer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+footer div {
+   display: flex;
+   gap: 20px;
+}
+
+footer a svg {
+   transition: transform 0.2s;
+}
+
+footer a:hover svg {
+   transform: scale(1.1);
+}
+
+a {
+   color: white;
+
+   &:hover {
+      color: #00e6e6;
+   }
+}
+
+.footer-copy {
+   text-align: center;
+   font-size: 0.85rem;
+   color: #777;
+   margin-top: 0.5rem;
+}

@@ -99,7 +99,7 @@ function App() {
                 </a>
             </div>
         </footer>
-        <p className='footer-copy'>© 2025 César Valderrama</p>
+        <p className='footer-copy'> © 2025 César Valderrama </p>
         </>
     )
 }

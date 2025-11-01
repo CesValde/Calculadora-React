@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { evaluate, re } from 'mathjs'
-import reactLogo from './assets/react.svg'
+import reactLogo from '../public/react.svg'
 
 function App() {
     // valor inicial
